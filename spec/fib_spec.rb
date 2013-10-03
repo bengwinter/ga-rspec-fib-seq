@@ -1,5 +1,5 @@
 require 'spec_helper'
-require_relative '../lib/math'
+require_relative '../lib/fib'
 
 describe "#fib" do 
   it "should have a method called fib" do
@@ -24,7 +24,7 @@ describe "#fib" do
 
   it "should raise an error when a non-integer is passed a parameter" do
     expect{fib("cat")}.to raise_error(NoMethodError)
-    expect{fib(1.1)}.to raise_error("Needs to be an integer, not a float")
+    expect{fib(1.1)}.to raise_error(NoMethodError)
     expect{fib(true)}.to raise_error(NoMethodError)
     expect{fib([1, 2])}.to raise_error(NoMethodError)
   end
