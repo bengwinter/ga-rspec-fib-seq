@@ -14,12 +14,12 @@ describe "#fib" do
   end  
 
   it "should give back the Fibannaci sequence" do
-    expect(fib(1)).to eq [1]
-    expect(fib(2)).to eq [1, 1]
-    expect(fib(4)).to eq [1, 1, 2, 3]
-    expect(fib(7)).to eq [1, 1, 2, 3, 5, 8, 13]
-    expect(fib(9)).to eq [1, 1, 2, 3, 5, 8, 13, 21, 34]
-    expect(fib(10)).to eq [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+    expect(fib(1)).to eq [0]
+    expect(fib(2)).to eq [0, 1]
+    expect(fib(4)).to eq [0, 1, 1, 2]
+    expect(fib(7)).to eq [0, 1, 1, 2, 3, 5, 8]
+    expect(fib(9)).to eq [0, 1, 1, 2, 3, 5, 8, 13, 21]
+    expect(fib(10)).to eq [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
   end
 
   it "should raise an error when a non-integer is passed a parameter" do
